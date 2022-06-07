@@ -1,14 +1,12 @@
 `include "storage.v"
 `include "initialize.v"
 
-module scan (input [7:0] a1 [9:0],
-input [7:0] b1 [9:0], input [7:0] a[8:0][0:2], input b,
+module scan ( input [7:0] a[8:0][0:2], input b,
 output i1, output i2, output value
 );
 integer i;
-integer j;
-initialize oot(a1.(a1), b1.(b1));
-storage uut(a.(a))
+
+storage uut(a2.(a))
 for ( i=0 ; i<9 ; i++ ) begin
 
         
