@@ -1,6 +1,6 @@
-module initialize();
-reg [7:0] a [9:0];
-reg [7:0] b [9:0];
+module initialize(input [7:0] a1 [9:0];
+input [7:0] b1 [9:0];
+);
 integer i;
 for(i=0;i<10;i++) begin
   a[i]<=0;
